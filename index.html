@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>DOM - CSS</title>
   </head>
@@ -25,11 +26,15 @@
     </div>
     <div class="main2">
     <div class="box box">
-      <input type="text" placeholder="First Name"></br>
-      <input type="text" placeholder="Last Name"></br>
-      <input type="email" placeholder="Email address"></br>
-      <input type="password" placeholder="Password"></br>
-      <button class="btn4">CLAIM YOUR FREE TRIAL</button><br>
+      <input type="text" placeholder="First Name" id="first_name" value=""></br>
+      <p id="message" class="color"></p>
+      <input type="text" placeholder="Last Name" id="last_name" value=""></br>
+      <p id="message2" class="color"></p>
+      <input type="email" placeholder="Email address" id="email" value=""></br>
+      <p id="message3" class="color"></p>
+      <input type="password" placeholder="Password" id="pass" value=""></br>
+      <p id="message4" class="color"></p>
+      <button onclick="return myFun()" class="btn4" >CLAIM YOUR FREE TRIAL</button><br>
       <p>By clicking the button,you are agreeing to
         our <span>Terms and Services</span>
       </p>
